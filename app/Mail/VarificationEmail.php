@@ -29,6 +29,6 @@ class VarificationEmail extends Mailable
      */
     public function build()
     {
-        return $this->view('email.VarificationEmail');
+        return $this->view('email.varificationEmail');
     }
 }
