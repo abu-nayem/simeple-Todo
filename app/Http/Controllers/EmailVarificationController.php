@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 class EmailVarificationController extends Controller
 {
-    //
+    
     public function checkmail(){
     	return view('email.checkmail');
     }
