@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/todos', 'HomeController@index')->name('home');
+Route::get('/todos', 'HomeController@index')->middleware('can:isUser')->name('home');
 Route::get('/checkemail','EmailVarificationController@checkmail');
 Route::get('/verify/{id}','EmailVarificationController@verify');
 
